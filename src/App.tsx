@@ -6,7 +6,7 @@ import InfluencerLanding from './pages/InfluencerLanding';
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/Dekho-Domain">
       <Routes>
         <Route path="/" element={<MainLanding />} />
         <Route path="/partner" element={<AgencyLanding />} />
