@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
             marginBottom: '24px',
             boxShadow: '0 4px 10px rgba(255,87,34,0.1)'
           }}>
-            🚀 Official Partner Program
+            🚀 Official Agency Program
           </span>
           <h1 style={{ maxWidth: '600px', margin: window.innerWidth < 968 ? '0 auto 24px' : '0 0 24px' }}>
             Agency Business Ko <br />

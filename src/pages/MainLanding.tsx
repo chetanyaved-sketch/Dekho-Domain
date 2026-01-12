@@ -35,7 +35,7 @@ const MainLanding: React.FC = () => {
                         }}
                             className="nav-link"
                         >
-                            Partner Program
+                            Agency Program
                         </Link>
                         <Link to="/creator" style={{
                             textDecoration: 'none',
@@ -129,7 +129,7 @@ const MainLanding: React.FC = () => {
                                     <div style={{ color: '#FF7F32', marginBottom: '16px', transform: 'scale(1.1)' }}>
                                         <Business sx={{ fontSize: 50 }} />
                                     </div>
-                                    <h3 style={{ color: '#1a1a1a', fontSize: '1.6rem', marginBottom: '8px', fontWeight: '700' }}>Dekho Partner</h3>
+                                    <h3 style={{ color: '#1a1a1a', fontSize: '1.6rem', marginBottom: '8px', fontWeight: '700' }}>Dekho Agency</h3>
                                     <p style={{ color: '#666', fontSize: '1rem' }}>For Agencies</p>
                                 </div>
                             </Link>

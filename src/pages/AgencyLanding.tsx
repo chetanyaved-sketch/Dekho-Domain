@@ -21,7 +21,7 @@ const AgencyLanding: React.FC = () => {
                 <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <Link to="/" style={{ textDecoration: 'none' }}>
                         <div style={{ fontSize: '1.5rem', fontWeight: '800', color: 'var(--primary-orange)' }}>
-                            Dekho! <span style={{ fontSize: '1rem', color: '#666', fontWeight: '500' }}>Partner</span>
+                            Dekho! <span style={{ fontSize: '1rem', color: '#666', fontWeight: '500' }}>Agency</span>
                         </div>
                     </Link>
                     <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
@@ -59,7 +59,7 @@ const AgencyLanding: React.FC = () => {
                     <h3 style={{ color: 'var(--primary-orange)', marginBottom: '16px' }}>Dekho!</h3>
                     <p style={{ color: '#888', marginBottom: '24px' }}>The growing influencer ecosystem.</p>
                     <div style={{ fontSize: '0.9rem', color: '#555' }}>
-                        © {new Date().getFullYear()} Dekho! Partner Program. All rights reserved.
+                        © {new Date().getFullYear()} Dekho! Agency Program. All rights reserved.
                     </div>
                 </div>
             </footer>

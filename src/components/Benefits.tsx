@@ -24,7 +24,7 @@ const Benefits: React.FC = () => {
         <section className="section-padding" style={{ backgroundColor: '#fdfdfd' }}>
             <div className="container">
                 <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-                    <h2 className="gradient-text" style={{ fontSize: '2.5rem' }}>Partner Kyun Banein?</h2>
+                    <h2 className="gradient-text" style={{ fontSize: '2.5rem' }}>Agency Kyun Banein?</h2>
                     <p style={{ color: 'var(--text-light)', fontSize: '1.2rem' }}>Dekho! ke saath agency chalao nahi, udaao 🚀</p>
                 </div>
 
