@@ -17,11 +17,47 @@ const MainLanding: React.FC = () => {
                 zIndex: 1000,
                 boxShadow: '0 2px 20px rgba(0,0,0,0.02)'
             }}>
-                <div className="container" style={{ display: 'flex', alignItems: 'center' }}>
-                    <div style={{ fontSize: '2rem', fontWeight: '800', color: 'var(--primary-orange)', letterSpacing: '-1px' }}>
-                        Dekho!
-                    </div>
+                <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <Link to="/" style={{ textDecoration: 'none' }}>
+                        <div style={{ fontSize: '2rem', fontWeight: '800', color: 'var(--primary-orange)', letterSpacing: '-1px' }}>
+                            Dekho!
+                        </div>
+                    </Link>
+                    <nav style={{ display: 'flex', gap: '30px', alignItems: 'center' }}>
+                        <Link to="/partner" style={{
+                            textDecoration: 'none',
+                            color: '#333',
+                            fontWeight: '600',
+                            fontSize: '1rem',
+                            padding: '8px 16px',
+                            borderRadius: '20px',
+                            transition: 'all 0.3s'
+                        }}
+                            className="nav-link"
+                        >
+                            Partner Program
+                        </Link>
+                        <Link to="/creator" style={{
+                            textDecoration: 'none',
+                            color: '#333',
+                            fontWeight: '600',
+                            fontSize: '1rem',
+                            padding: '8px 16px',
+                            borderRadius: '20px',
+                            transition: 'all 0.3s'
+                        }}
+                            className="nav-link"
+                        >
+                            For Creators
+                        </Link>
+                    </nav>
                 </div>
+                <style>{`
+          .nav-link:hover {
+            background: #FFF0E5;
+            color: var(--primary-orange) !important;
+          }
+        `}</style>
             </header>
 
             <div style={{ height: '80px' }}></div>

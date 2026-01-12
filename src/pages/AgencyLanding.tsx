@@ -19,11 +19,13 @@ const AgencyLanding: React.FC = () => {
                 boxShadow: '0 2px 10px rgba(0,0,0,0.05)'
             }}>
                 <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <div style={{ fontSize: '1.5rem', fontWeight: '800', color: 'var(--primary-orange)' }}>
-                        Dekho! <span style={{ fontSize: '1rem', color: '#666', fontWeight: '500' }}>Partner</span>
-                    </div>
+                    <Link to="/" style={{ textDecoration: 'none' }}>
+                        <div style={{ fontSize: '1.5rem', fontWeight: '800', color: 'var(--primary-orange)' }}>
+                            Dekho! <span style={{ fontSize: '1rem', color: '#666', fontWeight: '500' }}>Partner</span>
+                        </div>
+                    </Link>
                     <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
-                        <Link to="/influencer" style={{
+                        <Link to="/creator" style={{
                             textDecoration: 'none',
                             color: '#666',
                             fontWeight: '600',
