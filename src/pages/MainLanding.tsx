@@ -99,7 +99,7 @@ const MainLanding: React.FC = () => {
                             lineHeight: '1.2',
                             color: '#1a1a1a'
                         }}>
-                            Dekho! : <span className="gradient-text">Magar Pyar Se</span>
+                            Dekho! <span className="gradient-text">Magar Pyar se.</span>
                         </h1>
 
                         <p style={{
