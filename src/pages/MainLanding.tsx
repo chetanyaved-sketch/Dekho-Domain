@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { TouchApp, VideoCameraFront, CardGiftcard, Forum, Business, Star } from '@mui/icons-material';
+import { TouchApp, VideoCameraFront, CardGiftcard, Business, Star } from '@mui/icons-material';
 import imgCreator from '../assets/carousel_1.png'; // Using the realistic creator image
 
 const MainLanding: React.FC = () => {
@@ -17,47 +17,13 @@ const MainLanding: React.FC = () => {
                 zIndex: 1000,
                 boxShadow: '0 2px 20px rgba(0,0,0,0.02)'
             }}>
-                <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div className="container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Link to="/" style={{ textDecoration: 'none' }}>
-                        <div style={{ fontSize: '2rem', fontWeight: '800', color: 'var(--primary-orange)', letterSpacing: '-1px' }}>
+                        <div style={{ fontSize: '2.5rem', fontWeight: '800', color: 'var(--primary-orange)', letterSpacing: '-1px' }}>
                             Dekho!
                         </div>
                     </Link>
-                    <nav style={{ display: 'flex', gap: '30px', alignItems: 'center' }}>
-                        <Link to="/partner" style={{
-                            textDecoration: 'none',
-                            color: '#333',
-                            fontWeight: '600',
-                            fontSize: '1rem',
-                            padding: '8px 16px',
-                            borderRadius: '20px',
-                            transition: 'all 0.3s'
-                        }}
-                            className="nav-link"
-                        >
-                            Agency Program
-                        </Link>
-                        <Link to="/creator" style={{
-                            textDecoration: 'none',
-                            color: '#333',
-                            fontWeight: '600',
-                            fontSize: '1rem',
-                            padding: '8px 16px',
-                            borderRadius: '20px',
-                            transition: 'all 0.3s'
-                        }}
-                            className="nav-link"
-                        >
-                            For Creators
-                        </Link>
-                    </nav>
                 </div>
-                <style>{`
-          .nav-link:hover {
-            background: #FFF0E5;
-            color: var(--primary-orange) !important;
-          }
-        `}</style>
             </header>
 
             <div style={{ height: '80px' }}></div>
@@ -89,69 +55,36 @@ const MainLanding: React.FC = () => {
                             textTransform: 'uppercase',
                             letterSpacing: '1px'
                         }}>
-                            The Connection App
+                            Naye Dost, Real Connections
                         </span>
 
-                        {/* Updated Tagline: Single Line */}
                         <h1 style={{
-                            fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+                            fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
                             marginBottom: '20px',
-                            lineHeight: '1.2',
-                            color: '#1a1a1a'
+                            lineHeight: '1.1',
+                            color: '#1a1a1a',
+                            fontWeight: '800'
                         }}>
                             Dekho! <span className="gradient-text">Magar Pyar se.</span>
                         </h1>
 
                         <p style={{
-                            fontSize: '1.25rem',
+                            fontSize: '1.3rem',
                             color: '#555',
                             marginBottom: '50px',
-                            maxWidth: '650px',
+                            maxWidth: '700px',
                             margin: '0 auto 60px',
                             lineHeight: '1.6'
                         }}>
-                            Real People. Real Talk. Ab naye logon se milna aur connection banana hua aur bhi aasaan.
+                            Bharat ka apna video discovery app. Yahan har swipe mein hai ek naya dost aur har call mein ek muskurahat.
+                            <br /><br />
+                            <strong style={{ color: '#FF7F32' }}>Secure, Private aur 100% Fun!</strong>
                         </p>
 
-                        {/* Redirection Buttons (Hero) */}
-                        <div style={{ display: 'flex', gap: '30px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '80px' }}>
-                            {/* Link to Agency */}
-                            <Link to="/partner" style={{ textDecoration: 'none', flex: '1', minWidth: '280px', maxWidth: '350px' }}>
-                                <div className="popped-out" style={{
-                                    padding: '40px 30px',
-                                    textAlign: 'center',
-                                    cursor: 'pointer',
-                                    background: '#fff',
-                                    borderRadius: '30px',
-                                    border: '1px solid rgba(0,0,0,0.05)',
-                                    transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)'
-                                }}>
-                                    <div style={{ color: '#FF7F32', marginBottom: '16px', transform: 'scale(1.1)' }}>
-                                        <Business sx={{ fontSize: 50 }} />
-                                    </div>
-                                    <h3 style={{ color: '#1a1a1a', fontSize: '1.6rem', marginBottom: '8px', fontWeight: '700' }}>Dekho Agency</h3>
-                                    <p style={{ color: '#666', fontSize: '1rem' }}>For Agencies</p>
-                                </div>
-                            </Link>
-
-                            {/* Link to Creator */}
-                            <Link to="/creator" style={{ textDecoration: 'none', flex: '1', minWidth: '280px', maxWidth: '350px' }}>
-                                <div className="popped-out" style={{
-                                    padding: '40px 30px',
-                                    textAlign: 'center',
-                                    cursor: 'pointer',
-                                    background: '#fff',
-                                    borderRadius: '30px',
-                                    border: '1px solid rgba(0,0,0,0.05)',
-                                    transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)'
-                                }}>
-                                    <div style={{ color: '#FF7F32', marginBottom: '16px', transform: 'scale(1.1)' }}>
-                                        <Star sx={{ fontSize: 50 }} />
-                                    </div>
-                                    <h3 style={{ color: '#1a1a1a', fontSize: '1.6rem', marginBottom: '8px', fontWeight: '700' }}>Dekho Creators</h3>
-                                    <p style={{ color: '#666', fontSize: '1rem' }}>For Creators</p>
-                                </div>
-                            </Link>
+                        <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', marginBottom: '80px' }}>
+                            <button className="btn-primary" style={{ padding: '18px 45px', fontSize: '1.2rem', borderRadius: '50px' }}>
+                                Download App
+                            </button>
                         </div>
 
                         {/* Visual */}
@@ -163,7 +96,7 @@ const MainLanding: React.FC = () => {
                             boxShadow: '0 30px 80px rgba(0,0,0,0.12)',
                             border: '8px solid #fff'
                         }}>
-                            <img src={imgCreator} alt="Happy Creator on Video Call" style={{ width: '100%', display: 'block' }} />
+                            <img src={imgCreator} alt="Dekho App Experience" style={{ width: '100%', display: 'block' }} />
                         </div>
                     </div>
                 </section>
@@ -172,46 +105,82 @@ const MainLanding: React.FC = () => {
                 <section className="section-padding">
                     <div className="container">
                         <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-                            <h2 className="gradient-text">Dekho Mein Kya Khaas Hai?</h2>
-                            <p style={{ color: '#666' }}>Features jo aapko deewana bana de.</p>
+                            <h2 className="gradient-text">Aapke Liye Kya Khaas Hai?</h2>
+                            <p style={{ color: '#666', fontSize: '1.1rem' }}>Fun features jo aapko deewana bana de.</p>
                         </div>
 
-                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px' }}>
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '40px' }}>
                             {/* Feature 1 */}
-                            <div className="modern-card" style={{ padding: '30px', textAlign: 'center', background: '#fff', borderRadius: '20px', border: '1px solid #eee', transition: 'all 0.3s' }}>
-                                <div style={{ color: '#FF7F32', marginBottom: '16px' }}><TouchApp sx={{ fontSize: 50 }} /></div>
-                                <h3 style={{ marginBottom: '10px' }}>Swipe to Discover</h3>
-                                <p style={{ color: '#666' }}>Bas swipe karo aur apne perfect match ya dost ko dhoondo.</p>
+                            <div className="modern-card" style={{ padding: '40px 30px', textAlign: 'center', background: '#fff', borderRadius: '30px', border: '1px solid #eee', transition: 'all 0.3s' }}>
+                                <div style={{ color: '#FF7F32', marginBottom: '20px' }}><TouchApp sx={{ fontSize: 60 }} /></div>
+                                <h3 style={{ marginBottom: '15px', fontSize: '1.5rem' }}>Swipe to Discover</h3>
+                                <p style={{ color: '#666', lineHeight: '1.5' }}>Bas swipe karo aur apne perfect match ya naye doston se milo. Easy aur amazing!</p>
                             </div>
                             {/* Feature 2 */}
-                            <div className="modern-card" style={{ padding: '30px', textAlign: 'center', background: '#fff', borderRadius: '20px', border: '1px solid #eee', transition: 'all 0.3s' }}>
-                                <div style={{ color: '#FF7F32', marginBottom: '16px' }}><VideoCameraFront sx={{ fontSize: 50 }} /></div>
-                                <h3 style={{ marginBottom: '10px' }}>HD Video Calling</h3>
-                                <p style={{ color: '#666' }}>Face-to-face baat karo, bilkul real quality mein. No lag.</p>
+                            <div className="modern-card" style={{ padding: '40px 30px', textAlign: 'center', background: '#fff', borderRadius: '30px', border: '1px solid #eee', transition: 'all 0.3s' }}>
+                                <div style={{ color: '#FF7F32', marginBottom: '20px' }}><VideoCameraFront sx={{ fontSize: 60 }} /></div>
+                                <h3 style={{ marginBottom: '15px', fontSize: '1.5rem' }}>Full HD Video</h3>
+                                <p style={{ color: '#666', lineHeight: '1.5' }}>Crystal clear video calls. Aisa lagega jaise saamne baithe ho. No lag, only talk.</p>
                             </div>
                             {/* Feature 3 */}
-                            <div className="modern-card" style={{ padding: '30px', textAlign: 'center', background: '#fff', borderRadius: '20px', border: '1px solid #eee', transition: 'all 0.3s' }}>
-                                <div style={{ color: '#FF7F32', marginBottom: '16px' }}><CardGiftcard sx={{ fontSize: 50 }} /></div>
-                                <h3 style={{ marginBottom: '10px' }}>Virtual Gifting</h3>
-                                <p style={{ color: '#666' }}>Impress karo unique digital gifts ke saath. Dil jeet lo.</p>
-                            </div>
-                            {/* Feature 4 */}
-                            <div className="modern-card" style={{ padding: '30px', textAlign: 'center', background: '#fff', borderRadius: '20px', border: '1px solid #eee', transition: 'all 0.3s' }}>
-                                <div style={{ color: '#FF7F32', marginBottom: '16px' }}><Forum sx={{ fontSize: 50 }} /></div>
-                                <h3 style={{ marginBottom: '10px' }}>Instant Messaging</h3>
-                                <p style={{ color: '#666' }}>Kabhi bhi, kahin bhi chat karo. Private aur secure.</p>
+                            <div className="modern-card" style={{ padding: '40px 30px', textAlign: 'center', background: '#fff', borderRadius: '30px', border: '1px solid #eee', transition: 'all 0.3s' }}>
+                                <div style={{ color: '#FF7F32', marginBottom: '20px' }}><CardGiftcard sx={{ fontSize: 60 }} /></div>
+                                <h3 style={{ marginBottom: '15px', fontSize: '1.5rem' }}>Cool Digital Gifts</h3>
+                                <p style={{ color: '#666', lineHeight: '1.5' }}>Apne pasandida logon ko unique digital gifts bhejo aur unka dil jeet lo.</p>
                             </div>
                         </div>
-                        <style>{`
-                    .modern-card:hover {
-                        transform: translateY(-10px);
-                        box-shadow: 0 20px 40px rgba(255, 127, 50, 0.15) !important;
-                        border-color: #ffe0d0 !important;
-                    }
-                `}</style>
                     </div>
                 </section>
 
+                {/* Professional Links Section - Moved to Bottom */}
+                <section style={{ padding: '80px 0', backgroundColor: '#f9f9f9' }}>
+                    <div className="container">
+                        <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+                            <h2 style={{ fontSize: '2rem', color: '#1a1a1a' }}>Dekho! Se Judein</h2>
+                            <p style={{ color: '#666' }}>Humara professional network join karein.</p>
+                        </div>
+
+                        <div style={{ display: 'flex', gap: '30px', justifyContent: 'center', flexWrap: 'wrap' }}>
+                            {/* Link to Agency */}
+                            <Link to="/partner" style={{ textDecoration: 'none', flex: '1', minWidth: '280px', maxWidth: '400px' }}>
+                                <div className="popped-out" style={{
+                                    padding: '40px 30px',
+                                    textAlign: 'center',
+                                    cursor: 'pointer',
+                                    background: '#fff',
+                                    borderRadius: '30px',
+                                    border: '1px solid rgba(0,0,0,0.05)',
+                                    transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)'
+                                }}>
+                                    <div style={{ color: '#FF7F32', marginBottom: '16px' }}>
+                                        <Business sx={{ fontSize: 40 }} />
+                                    </div>
+                                    <h3 style={{ color: '#1a1a1a', fontSize: '1.4rem', marginBottom: '8px', fontWeight: '700' }}>Dekho Agency</h3>
+                                    <p style={{ color: '#666', fontSize: '0.95rem' }}>Grow your influencer business with us.</p>
+                                </div>
+                            </Link>
+
+                            {/* Link to Creator */}
+                            <Link to="/creator" style={{ textDecoration: 'none', flex: '1', minWidth: '280px', maxWidth: '400px' }}>
+                                <div className="popped-out" style={{
+                                    padding: '40px 30px',
+                                    textAlign: 'center',
+                                    cursor: 'pointer',
+                                    background: '#fff',
+                                    borderRadius: '30px',
+                                    border: '1px solid rgba(0,0,0,0.05)',
+                                    transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)'
+                                }}>
+                                    <div style={{ color: '#FF7F32', marginBottom: '16px' }}>
+                                        <Star sx={{ fontSize: 40 }} />
+                                    </div>
+                                    <h3 style={{ color: '#1a1a1a', fontSize: '1.4rem', marginBottom: '8px', fontWeight: '700' }}>Dekho Creators</h3>
+                                    <p style={{ color: '#666', fontSize: '0.95rem' }}>Monetize your talent and reach more fans.</p>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+                </section>
             </main>
 
             {/* Footer with Policies */}
