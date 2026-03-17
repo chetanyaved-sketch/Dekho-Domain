@@ -137,19 +137,19 @@ const AdsLanding: React.FC = () => {
                             <button className="vibrate-btn" style={{
                                 backgroundColor: '#FF7F32',
                                 color: '#fff',
-                                padding: 'clamp(12px, 2vh, 16px) clamp(24px, 5vw, 40px)',
-                                borderRadius: '50px',
+                                padding: 'clamp(14px, 2.5vh, 22px) clamp(32px, 6vw, 64px)',
+                                borderRadius: '60px',
                                 border: 'none',
-                                fontSize: 'clamp(0.9rem, 2.5vw, 1.15rem)',
+                                fontSize: 'clamp(1rem, 3vw, 1.4rem)',
                                 fontWeight: '700',
                                 display: 'flex',
                                 alignItems: 'center',
-                                gap: '12px',
+                                gap: '16px',
                                 cursor: 'pointer',
-                                boxShadow: '0 8px 25px rgba(255, 127, 50, 0.4)',
-                                transition: 'transform 0.2s'
+                                boxShadow: '0 12px 35px rgba(255, 127, 50, 0.4)',
+                                transition: 'all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)'
                             }}>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M3.60938 2.37891C3.41406 2.58333 3.30078 2.89844 3.30078 3.29102V20.709C3.30078 21.1016 3.41406 21.4167 3.60938 21.6211L3.6582 21.666L13.4141 11.9102V11.7559L3.6582 1.99609L3.60938 2.37891Z" fill="#ffffff" opacity="0.9"/>
                                     <path d="M16.666 15.166L13.4141 11.9102V11.7539L16.666 8.50391L16.7129 8.5293L20.5527 10.7109C21.6484 11.332 21.6484 12.332 20.5527 12.9531L16.7129 15.1328L16.666 15.166Z" fill="#ffffff" opacity="0.9"/>
                                     <path d="M16.7129 15.1328L13.4141 11.832L3.60938 21.6211C3.96875 22.002 4.56836 22.043 5.25391 21.6543L16.7129 15.1328Z" fill="#ffffff" opacity="0.9"/>
