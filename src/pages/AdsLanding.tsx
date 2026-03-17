@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchApp, VideoCameraFront, CardGiftcard, Security, GetApp, AutoAwesome } from '@mui/icons-material';
+import { TouchApp, VideoCameraFront, CardGiftcard, Security, AutoAwesome } from '@mui/icons-material';
 import bgImage from '../assets/hero_image.png';
 
 const AdsLanding: React.FC = () => {
@@ -120,25 +120,34 @@ const AdsLanding: React.FC = () => {
                     <div style={{ position: 'relative', zIndex: 2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                         <a href={playStoreLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                             <button style={{
-                                backgroundColor: '#FF7F32',
+                                backgroundColor: '#000000',
                                 color: '#fff',
-                                padding: 'clamp(14px, 2vh, 18px) clamp(24px, 5vw, 45px)',
-                                borderRadius: '50px',
-                                border: 'none',
-                                fontSize: 'clamp(1rem, 3vw, 1.25rem)',
-                                fontWeight: '700',
+                                padding: 'clamp(10px, 1.5vh, 14px) clamp(20px, 4vw, 32px)',
+                                borderRadius: '8px',
+                                border: '1px solid #a6a6a6',
+                                fontSize: '1rem',
+                                fontWeight: '500',
                                 display: 'flex',
                                 alignItems: 'center',
-                                gap: '10px',
+                                gap: '12px',
                                 cursor: 'pointer',
-                                boxShadow: '0 8px 25px rgba(255, 127, 50, 0.4)',
-                                transition: 'transform 0.2s'
+                                transition: 'all 0.2s',
+                                textAlign: 'left'
                             }}>
-                                <GetApp /> Download the App
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.60938 2.37891C3.41406 2.58333 3.30078 2.89844 3.30078 3.29102V20.709C3.30078 21.1016 3.41406 21.4167 3.60938 21.6211L3.6582 21.666L13.4141 11.9102V11.7559L3.6582 1.99609L3.60938 2.37891Z" fill="#EA4335"/>
+                                    <path d="M16.666 15.166L13.4141 11.9102V11.7539L16.666 8.50391L16.7129 8.5293L20.5527 10.7109C21.6484 11.332 21.6484 12.332 20.5527 12.9531L16.7129 15.1328L16.666 15.166Z" fill="#FBBC04"/>
+                                    <path d="M16.7129 15.1328L13.4141 11.832L3.60938 21.6211C3.96875 22.002 4.56836 22.043 5.25391 21.6543L16.7129 15.1328Z" fill="#34A853"/>
+                                    <path d="M16.7129 8.5293L5.25391 2.01172C4.56836 1.62305 3.96875 1.66406 3.60938 2.04492L13.4141 11.832L16.7129 8.5293Z" fill="#4285F4"/>
+                                </svg>
+                                <div>
+                                    <div style={{ fontSize: '0.65rem', textTransform: 'uppercase', marginBottom: '2px', opacity: 0.9 }}>Get it on</div>
+                                    <div style={{ fontSize: '1.2rem', fontWeight: '600' }}>Google Play</div>
+                                </div>
                             </button>
                         </a>
                         <span style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.75rem', marginTop: '10px' }}>
-                            Available on iOS & Android
+                            Trusted by millions across Bharat
                         </span>
                     </div>
 
