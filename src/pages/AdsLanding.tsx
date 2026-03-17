@@ -207,6 +207,22 @@ const AdsLanding: React.FC = () => {
                     </div>
                 </div>
             </main>
+
+            {/* Policy Footer */}
+            <footer style={{
+                backgroundColor: '#0a101a',
+                padding: '24px 32px',
+                display: 'flex',
+                justifyContent: 'center',
+                flexWrap: 'wrap',
+                gap: '32px',
+                borderTop: '1px solid rgba(255,255,255,0.05)'
+            }}>
+                <a href="#" style={{ color: '#94a3b8', textDecoration: 'none', fontSize: '0.9rem', transition: 'color 0.2s' }}>Privacy Policy</a>
+                <a href="#" style={{ color: '#94a3b8', textDecoration: 'none', fontSize: '0.9rem', transition: 'color 0.2s' }}>Terms of Service</a>
+                <a href="#" style={{ color: '#94a3b8', textDecoration: 'none', fontSize: '0.9rem', transition: 'color 0.2s' }}>Child Safety & Abuse Policy</a>
+                <a href="#" style={{ color: '#94a3b8', textDecoration: 'none', fontSize: '0.9rem', transition: 'color 0.2s' }}>Community Guidelines</a>
+            </footer>
         </div>
     );
 };
