@@ -1,196 +1,212 @@
 import React from 'react';
-import { TouchApp, VideoCameraFront, CardGiftcard, Security, GetApp } from '@mui/icons-material';
-import bgImage from '../assets/hero_image.png'; // Using the lifestyle hero image as background
+import { TouchApp, VideoCameraFront, CardGiftcard, Security, GetApp, AutoAwesome } from '@mui/icons-material';
+import bgImage from '../assets/hero_image.png';
 
 const AdsLanding: React.FC = () => {
-    const playStoreLink = "https://play.google.com/store/apps/details?id=com.dekho.app"; // Placeholder
+    const playStoreLink = "https://play.google.com/store/apps/details?id=com.dekho.app";
 
     return (
         <div style={{
-            backgroundColor: '#111111', // Dark background around the main image card
+            backgroundColor: '#ffffff',
             minHeight: '100vh',
             display: 'flex',
             flexDirection: 'column',
-            overflow: 'hidden', // Single screen, no scrolling
-            padding: '24px',
-            boxSizing: 'border-box',
             fontFamily: "'Poppins', sans-serif"
         }}>
-            {/* Logo */}
-            <div style={{
-                fontSize: '2rem',
-                fontWeight: '800',
-                color: '#FF7F32',
-                letterSpacing: '-1px',
-                marginBottom: '20px',
-                paddingLeft: '10px'
-            }}>
-                Dekho!
-            </div>
-
-            {/* Main Image Container */}
-            <div style={{
-                flex: 1,
-                position: 'relative',
-                borderRadius: '30px',
-                overflow: 'hidden',
-                backgroundImage: `url(${bgImage})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
+            {/* Header */}
+            <header style={{
+                padding: '16px 32px',
                 display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
                 alignItems: 'center',
-                boxShadow: '0 20px 50px rgba(0,0,0,0.5)',
+                backgroundColor: '#ffffff'
             }}>
-                {/* Dark Overlay for readability */}
-                <div style={{
-                    position: 'absolute',
-                    top: 0, left: 0, right: 0, bottom: 0,
-                    background: 'linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.8) 100%)',
-                    zIndex: 1
-                }}></div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <div style={{
+                        backgroundColor: '#FF7F32',
+                        borderRadius: '8px',
+                        padding: '4px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center'
+                    }}>
+                        <VideoCameraFront style={{ color: '#fff', fontSize: '1.2rem' }} />
+                    </div>
+                    <span style={{ fontSize: '1.4rem', fontWeight: '800', color: '#1a1a1a', letterSpacing: '-0.5px' }}>
+                        DekhoApp
+                    </span>
+                </div>
+            </header>
 
-                {/* Central Content */}
+            {/* Main Content Area */}
+            <main style={{
+                flex: 1,
+                padding: '0 24px 24px 24px',
+                display: 'flex',
+                flexDirection: 'column'
+            }}>
+                {/* Large Background Container */}
                 <div style={{
+                    flex: 1,
                     position: 'relative',
-                    zIndex: 2,
+                    borderRadius: '32px',
+                    overflow: 'hidden',
+                    backgroundImage: `url(${bgImage})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
-                    justifyContent: 'center',
-                    flex: 1,
-                    textAlign: 'center',
-                    padding: '0 20px',
-                    width: '100%',
-                    maxWidth: '900px'
+                    padding: '60px 20px 40px 20px'
                 }}>
+                    {/* Dark Overlay */}
+                    <div style={{
+                        position: 'absolute',
+                        top: 0, left: 0, right: 0, bottom: 0,
+                        backgroundColor: 'rgba(0,0,0,0.5)', // Adjust opacity as needed
+                        zIndex: 1
+                    }}></div>
+
+                    {/* Top Pill */}
+                    <div style={{
+                        position: 'relative',
+                        zIndex: 2,
+                        backgroundColor: 'rgba(255, 255, 255, 0.15)',
+                        backdropFilter: 'blur(10px)',
+                        padding: '8px 20px',
+                        borderRadius: '30px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '8px',
+                        marginBottom: '40px',
+                        border: '1px solid rgba(255, 255, 255, 0.3)'
+                    }}>
+                        <AutoAwesome style={{ color: '#FF7F32', fontSize: '1.2rem' }} />
+                        <span style={{ color: '#fff', fontSize: '0.9rem', fontWeight: '500' }}>The #1 Video Discovery App</span>
+                    </div>
+
+                    {/* Headline */}
                     <h1 style={{
-                        fontSize: 'clamp(2.5rem, 6vw, 5rem)',
+                        position: 'relative',
+                        zIndex: 2,
+                        fontSize: 'clamp(3rem, 8vw, 6rem)',
                         fontWeight: '800',
                         color: '#ffffff',
                         lineHeight: '1.1',
-                        marginBottom: '20px',
-                        textShadow: '0 4px 15px rgba(0,0,0,0.5)'
+                        textAlign: 'center',
+                        marginBottom: '24px',
+                        textShadow: '0 4px 20px rgba(0,0,0,0.3)'
                     }}>
-                        Naye Dost Banayein <br/><span style={{ color: '#FF7F32' }}>Live Video Pe!</span>
+                        <span style={{ color: '#FF7F32' }}>Dekho!</span> Magar Pyar<br />se.
                     </h1>
+
+                    {/* Sub-headline */}
                     <p style={{
-                        fontSize: 'clamp(1.1rem, 2vw, 1.4rem)',
+                        position: 'relative',
+                        zIndex: 2,
+                        fontSize: 'clamp(1rem, 2vw, 1.25rem)',
                         color: '#f0f0f0',
+                        textAlign: 'center',
+                        maxWidth: '650px',
                         marginBottom: '40px',
-                        lineHeight: '1.5',
-                        maxWidth: '700px',
-                        textShadow: '0 2px 5px rgba(0,0,0,0.5)'
+                        lineHeight: '1.6',
+                        textShadow: '0 2px 10px rgba(0,0,0,0.3)'
                     }}>
-                        Bharat ka apna video app. Aasani se connect karein, chat karein aur mazedaar baatein shuru karein abhi.
+                        Bharat's ultimate video discovery platform. Connect, swipe, and find your next best friend in seconds.
                     </p>
 
-                    <a href={playStoreLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-                        <button className="btn-primary" style={{
-                            padding: '18px 45px',
-                            fontSize: '1.3rem',
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '12px',
-                            borderRadius: '50px',
-                            background: 'linear-gradient(135deg, #FF7F32, #FF5722)',
-                            color: '#fff',
-                            border: 'none',
-                            fontWeight: '700',
-                            boxShadow: '0 10px 30px rgba(255, 127, 50, 0.4)',
-                            cursor: 'pointer',
+                    {/* CTA Button */}
+                    <div style={{ position: 'relative', zIndex: 2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <a href={playStoreLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                            <button style={{
+                                backgroundColor: '#FF7F32',
+                                color: '#fff',
+                                padding: '16px 40px',
+                                borderRadius: '50px',
+                                border: 'none',
+                                fontSize: '1.2rem',
+                                fontWeight: '700',
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '12px',
+                                cursor: 'pointer',
+                                boxShadow: '0 8px 25px rgba(255, 127, 50, 0.4)',
+                                transition: 'transform 0.2s'
+                            }}>
+                                <GetApp /> Download the App
+                            </button>
+                        </a>
+                        <span style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.8rem', marginTop: '12px' }}>
+                            Available on iOS & Android
+                        </span>
+                    </div>
+
+                    {/* Space filler to push cards to the bottom */}
+                    <div style={{ flex: 1, minHeight: '60px' }}></div>
+
+                    {/* Feature Cards Row */}
+                    <div style={{
+                        position: 'relative',
+                        zIndex: 2,
+                        width: '100%',
+                        maxWidth: '1200px',
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+                        gap: '20px'
+                    }}>
+                        {/* Card 1 */}
+                        <div style={{
+                            backgroundColor: '#ffffff',
+                            padding: '32px 24px',
+                            borderRadius: '24px',
+                            textAlign: 'center',
+                            boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
                         }}>
-                            <GetApp fontSize="large" /> Download App Now
-                        </button>
-                    </a>
-                </div>
+                            <TouchApp style={{ color: '#FF7F32', fontSize: '2.5rem', marginBottom: '16px' }} />
+                            <h3 style={{ color: '#1a1a1a', fontSize: '1.1rem', fontWeight: '700', marginBottom: '12px' }}>Swipe to Connect</h3>
+                            <p style={{ color: '#666', fontSize: '0.85rem', lineHeight: '1.5' }}>Effortlessly find interesting people with a simple swipe. It's fast, fun, and natural.</p>
+                        </div>
 
-                {/* Features Row at Bottom */}
-                <div style={{
-                    position: 'relative',
-                    zIndex: 2,
-                    width: '100%',
-                    padding: '0 30px 40px',
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-                    gap: '24px',
-                }}>
-                    {/* Feature 1 */}
-                    <div style={{
-                        background: 'rgba(20, 20, 20, 0.4)',
-                        backdropFilter: 'blur(16px)',
-                        WebkitBackdropFilter: 'blur(16px)',
-                        padding: '24px',
-                        borderRadius: '24px',
-                        border: '1px solid rgba(255, 255, 255, 0.15)',
-                        textAlign: 'center',
-                        color: '#fff'
-                    }}>
-                        <TouchApp style={{ fontSize: 45, color: '#FF7F32', marginBottom: '15px' }} />
-                        <h3 style={{ fontSize: '1.3rem', marginBottom: '8px', fontWeight: '700' }}>Swipe & Match</h3>
-                        <p style={{ fontSize: '0.95rem', color: '#ccc', lineHeight: '1.4' }}>Turant naye logon se milein.</p>
-                    </div>
+                        {/* Card 2 */}
+                        <div style={{
+                            backgroundColor: '#ffffff',
+                            padding: '32px 24px',
+                            borderRadius: '24px',
+                            textAlign: 'center',
+                            boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
+                        }}>
+                            <VideoCameraFront style={{ color: '#FF7F32', fontSize: '2.5rem', marginBottom: '16px' }} />
+                            <h3 style={{ color: '#1a1a1a', fontSize: '1.1rem', fontWeight: '700', marginBottom: '12px' }}>HD Video Calls</h3>
+                            <p style={{ color: '#666', fontSize: '0.85rem', lineHeight: '1.5' }}>Crystal-clear video quality makes every conversation feel like you're right there together.</p>
+                        </div>
 
-                    {/* Feature 2 */}
-                    <div style={{
-                        background: 'rgba(20, 20, 20, 0.4)',
-                        backdropFilter: 'blur(16px)',
-                        WebkitBackdropFilter: 'blur(16px)',
-                        padding: '24px',
-                        borderRadius: '24px',
-                        border: '1px solid rgba(255, 255, 255, 0.15)',
-                        textAlign: 'center',
-                        color: '#fff'
-                    }}>
-                        <VideoCameraFront style={{ fontSize: 45, color: '#FF7F32', marginBottom: '15px' }} />
-                        <h3 style={{ fontSize: '1.3rem', marginBottom: '8px', fontWeight: '700' }}>HD Video Calls</h3>
-                        <p style={{ fontSize: '0.95rem', color: '#ccc', lineHeight: '1.4' }}>Clear and lag-free baatein.</p>
-                    </div>
+                        {/* Card 3 */}
+                        <div style={{
+                            backgroundColor: '#ffffff',
+                            padding: '32px 24px',
+                            borderRadius: '24px',
+                            textAlign: 'center',
+                            boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
+                        }}>
+                            <CardGiftcard style={{ color: '#FF7F32', fontSize: '2.5rem', marginBottom: '16px' }} />
+                            <h3 style={{ color: '#1a1a1a', fontSize: '1.1rem', fontWeight: '700', marginBottom: '12px' }}>Exciting Gifts</h3>
+                            <p style={{ color: '#666', fontSize: '0.85rem', lineHeight: '1.5' }}>Express yourself with unique digital gifts that make every interaction special.</p>
+                        </div>
 
-                    {/* Feature 3 */}
-                    <div style={{
-                        background: 'rgba(20, 20, 20, 0.4)',
-                        backdropFilter: 'blur(16px)',
-                        WebkitBackdropFilter: 'blur(16px)',
-                        padding: '24px',
-                        borderRadius: '24px',
-                        border: '1px solid rgba(255, 255, 255, 0.15)',
-                        textAlign: 'center',
-                        color: '#fff'
-                    }}>
-                        <CardGiftcard style={{ fontSize: 45, color: '#FF7F32', marginBottom: '15px' }} />
-                        <h3 style={{ fontSize: '1.3rem', marginBottom: '8px', fontWeight: '700' }}>Send Gifts</h3>
-                        <p style={{ fontSize: '0.95rem', color: '#ccc', lineHeight: '1.4' }}>Apne doston ko impress karein.</p>
-                    </div>
-
-                    {/* Feature 4 */}
-                    <div style={{
-                        background: 'rgba(20, 20, 20, 0.4)',
-                        backdropFilter: 'blur(16px)',
-                        WebkitBackdropFilter: 'blur(16px)',
-                        padding: '24px',
-                        borderRadius: '24px',
-                        border: '1px solid rgba(255, 255, 255, 0.15)',
-                        textAlign: 'center',
-                        color: '#fff'
-                    }}>
-                        <Security style={{ fontSize: 45, color: '#FF7F32', marginBottom: '15px' }} />
-                        <h3 style={{ fontSize: '1.3rem', marginBottom: '8px', fontWeight: '700' }}>100% Secure</h3>
-                        <p style={{ fontSize: '0.95rem', color: '#ccc', lineHeight: '1.4' }}>Aapki privacy hamari priority.</p>
+                        {/* Card 4 */}
+                        <div style={{
+                            backgroundColor: '#ffffff',
+                            padding: '32px 24px',
+                            borderRadius: '24px',
+                            textAlign: 'center',
+                            boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
+                        }}>
+                            <Security style={{ color: '#FF7F32', fontSize: '2.5rem', marginBottom: '16px' }} />
+                            <h3 style={{ color: '#1a1a1a', fontSize: '1.1rem', fontWeight: '700', marginBottom: '12px' }}>100% Secure</h3>
+                            <p style={{ color: '#666', fontSize: '0.85rem', lineHeight: '1.5' }}>Your privacy is our priority. Enjoy fully safe, encrypted, and monitored conversations.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            {/* Footer */}
-            <div style={{
-                textAlign: 'center',
-                paddingTop: '20px',
-                color: '#666',
-                fontSize: '0.85rem'
-            }}>
-                © {new Date().getFullYear()} Dekho! App. Available on Google Play Store.
-            </div>
+            </main>
         </div>
     );
 };
