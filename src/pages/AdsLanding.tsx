@@ -119,13 +119,28 @@ const AdsLanding: React.FC = () => {
                     {/* CTA Button */}
                     <div style={{ position: 'relative', zIndex: 2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                         <a href={playStoreLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-                            <button style={{
+                            <style>
+                                {`
+                                    @keyframes vibrate {
+                                        0% { transform: translate(0); }
+                                        20% { transform: translate(-2px, 2px); }
+                                        40% { transform: translate(-2px, -2px); }
+                                        60% { transform: translate(2px, 2px); }
+                                        80% { transform: translate(2px, -2px); }
+                                        100% { transform: translate(0); }
+                                    }
+                                    .vibrate-btn:hover {
+                                        animation: vibrate 0.3s linear infinite;
+                                    }
+                                `}
+                            </style>
+                            <button className="vibrate-btn" style={{
                                 backgroundColor: '#FF7F32',
                                 color: '#fff',
-                                padding: 'clamp(12px, 2vh, 16px) clamp(28px, 6vw, 48px)',
+                                padding: 'clamp(12px, 2vh, 16px) clamp(24px, 5vw, 40px)',
                                 borderRadius: '50px',
                                 border: 'none',
-                                fontSize: 'clamp(1.1rem, 3vw, 1.25rem)',
+                                fontSize: 'clamp(0.9rem, 2.5vw, 1.15rem)',
                                 fontWeight: '700',
                                 display: 'flex',
                                 alignItems: 'center',
@@ -140,11 +155,11 @@ const AdsLanding: React.FC = () => {
                                     <path d="M16.7129 15.1328L13.4141 11.832L3.60938 21.6211C3.96875 22.002 4.56836 22.043 5.25391 21.6543L16.7129 15.1328Z" fill="#ffffff" opacity="0.9"/>
                                     <path d="M16.7129 8.5293L5.25391 2.01172C4.56836 1.62305 3.96875 1.66406 3.60938 2.04492L13.4141 11.832L16.7129 8.5293Z" fill="#ffffff" opacity="0.9"/>
                                 </svg>
-                                Get the App
+                                Download the App from Playstore
                             </button>
                         </a>
                         <span style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.8rem', marginTop: '12px' }}>
-                            Available on Google Play Store
+                            Trusted by millions across Bharat
                         </span>
                     </div>
 
